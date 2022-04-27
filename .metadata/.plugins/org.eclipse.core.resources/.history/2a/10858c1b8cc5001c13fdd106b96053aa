@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PasswordsAndUnitTestsTest {
+
+	@Test
+	void passSpacetest() {
+		String password = "beep boop";
+		boolean expected = false;
+		boolean actual = PasswordsAndUnitTests.passSpace(password);
+		assertEquals(expected, actual);
+	}
+
+}

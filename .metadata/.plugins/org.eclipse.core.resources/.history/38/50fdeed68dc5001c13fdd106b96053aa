@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+
+public class PasswordsAndUnitTests {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static boolean addPassword(String password) {
+		if (passSpace(password) == false) {
+			return false;
+		} else if (passLength(password) == false) {
+			return false;
+		}
+		return true;
+
+	}
+
+	public static boolean passSpace(String password) {
+		if (password.contains(" ")) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static boolean passNum(String password) {
+		if ((password.matches(".*[0-9].*") && (!password.matches(".*6.*")))) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public static boolean passLength(String password) {
+		if (password.length() < 7 || password.length() > 12) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static ArrayList<String> passwordStorage(String password) {
+		ArrayList<String> goodPasswords = new ArrayList<>();
+		if (addPassword(password) == true) {
+			goodPasswords.add(password);
+		}
+		return goodPasswords;
+
+	}
+}

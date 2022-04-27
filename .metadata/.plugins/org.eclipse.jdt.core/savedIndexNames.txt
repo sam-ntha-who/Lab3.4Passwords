@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+/Users/sam/Documents/GrandCircus/Projects/Labs/Lab3.4/.metadata/.plugins/org.eclipse.jdt.core
+3386061704.index
+1329416630.index
+3762209227.index
+1442600153.index
+919588414.index
+3733451250.index
+3178670430.index
+1137276110.index
+1131302960.index
+22548163.index
+3457944173.index
+159725587.index
+2995770526.index
+3200053494.index
+3971933979.index
+2467177500.index
+1816963510.index
+2148097494.index
+1865797976.index

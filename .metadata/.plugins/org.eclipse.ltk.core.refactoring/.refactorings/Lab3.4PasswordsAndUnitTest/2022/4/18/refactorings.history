@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;PasswordsAndUnitTests.primeNum(...)&apos; to &apos;notPrime&apos;&#x0A;- Original project: &apos;Lab3.4PasswordsAndUnitTest&apos;&#x0A;- Original element: &apos;PasswordsAndUnitTests.primeNum(...)&apos;&#x0A;- Renamed element: &apos;PasswordsAndUnitTests.notPrime(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;primeNum&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{PasswordsAndUnitTests.java[PasswordsAndUnitTests~primeNum~QString;" name="notPrime" references="true" stamp="1651022586193" version="1.0"/>
+</session>

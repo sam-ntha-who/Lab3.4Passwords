@@ -1,0 +1,85 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class PasswordsAndUnitTests {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static boolean addPassword(String password) {
+		if (passSpace(password) == false) {
+			return false;
+		} else if (passLength(password) == false) {
+			return false;
+		}
+		return true;
+
+	}
+
+	public static boolean passSpace(String password) {
+		if (password.contains(" ")) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public static boolean passNum(String password) {
+		if ((password.matches(".*[0-9].*") && (!password.matches(".*6.*")))) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public static boolean passLength(String password) {
+		if (password.length() < 7 || password.length() > 12) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	public static boolean passCapVowels(String password) {
+	//	ArrayList<Character> passVowel = new ArrayList<>();
+		int numVowels = 0;
+		char[] vowels = {'A','E','I','O','U','Y'};
+		for (int i = 0; i < vowels.length; i++) {
+		    for (int j = 0; j < password.length(); j++) {
+		        if (vowels[i] == password.charAt(j)) {
+		            numVowels++;
+		        }
+		    }
+		}
+		
+		
+	
+		if (numVowels >= 2) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	
+		
+	}
+		
+		
+		
+	public static boolean passAdminMod(String password) {
+		if (password.equals("admin") || password.equals("mod")) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public static ArrayList<String> passwordStorage(String password) {
+		ArrayList<String> goodPasswords = new ArrayList<>();
+		if (addPassword(password) == true) {
+			goodPasswords.add(password);
+		}
+		return goodPasswords;
+
+	}
+}
